@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  a61
-//
-//  Created by Nikhil Shankar on 3/21/21.
-//
-
 import UIKit
 
 @main
