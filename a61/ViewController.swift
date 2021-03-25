@@ -20,7 +20,21 @@ class ViewController: UIViewController {
         let s3 = storyboard?.instantiateViewController(identifier: "AddSupScreen") as! AddSupScreen;
         self.navigationController?.pushViewController(s3, animated: true)
     }
+   
+    @IBAction func addEventButton(_ sender: Any) {
+        let s4 = storyboard?.instantiateViewController(identifier: "AddEventScreen") as! AddEventScreen;
+        self.navigationController?.pushViewController(s4, animated: true)
+    }
     
+    @IBAction func viewEventsButton(_ sender: Any) {
+        let s = storyboard?.instantiateViewController(identifier: "EventListView") as! EventListView;
+        self.navigationController?.pushViewController(s, animated: true)
+    }
+    
+    @IBAction func viewSuppliersButton(_ sender: Any) {
+        let s = storyboard?.instantiateViewController(identifier: "SupplierListView") as! SupplierListView;
+        self.navigationController?.pushViewController(s, animated: true)
+    }
 }
 
 func initAppFunc() {

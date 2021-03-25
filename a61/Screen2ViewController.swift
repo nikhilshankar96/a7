@@ -30,6 +30,7 @@ class Screen2ViewController: UIViewController {
             nameField.text = "";
             passwordField.text = "";
             emailField.text = "";
+            self.navigationController?.popViewController(animated: true)
         }
         else{
             print("error");

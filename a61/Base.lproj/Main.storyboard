@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlU-F0-mE8">
-                                <rect key="frame" x="167.5" y="433" width="79" height="30"/>
-                                <state key="normal" title="Add Person"/>
-                                <connections>
-                                    <action selector="addPersonButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zk4-U0-UXq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhF-OB-kjZ">
                                 <rect key="frame" x="163" y="513" width="88" height="30"/>
                                 <state key="normal" title="Add Supplier"/>
@@ -31,14 +24,48 @@
                                     <action selector="addSupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSs-Lq-L5D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU5-Ph-oBh">
+                                <rect key="frame" x="172" y="589" width="70" height="30"/>
+                                <state key="normal" title="Add Event"/>
+                                <connections>
+                                    <action selector="addEventButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VU7-rc-KuQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXp-R4-gxf">
+                                <rect key="frame" x="165.5" y="627" width="83" height="30"/>
+                                <state key="normal" title="View Events"/>
+                                <connections>
+                                    <action selector="viewEventsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hi4-Ky-rh5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8Q-Yr-v4q">
+                                <rect key="frame" x="156" y="551" width="102" height="30"/>
+                                <state key="normal" title="View Suppliers"/>
+                                <connections>
+                                    <action selector="viewSuppliersButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBQ-vo-vdi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlU-F0-mE8">
+                                <rect key="frame" x="167.5" y="475" width="79" height="30"/>
+                                <state key="normal" title="Add Person"/>
+                                <connections>
+                                    <action selector="addPersonButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zk4-U0-UXq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nlU-F0-mE8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2vs-vX-dCE"/>
-                            <constraint firstItem="nlU-F0-mE8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8vM-HH-2OF"/>
-                            <constraint firstItem="QhF-OB-kjZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IjN-e2-Fb0"/>
-                            <constraint firstItem="QhF-OB-kjZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="qdV-iN-itY"/>
+                            <constraint firstItem="nlU-F0-mE8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9hO-0l-tf0"/>
+                            <constraint firstItem="LXp-R4-gxf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kz-Yt-pgG"/>
+                            <constraint firstItem="kU5-Ph-oBh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BCb-X6-c8a"/>
+                            <constraint firstItem="QhF-OB-kjZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Di9-v0-59h"/>
+                            <constraint firstItem="nlU-F0-mE8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="42" id="GEo-e7-Km0"/>
+                            <constraint firstItem="LXp-R4-gxf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="194" id="JOI-0q-DkW"/>
+                            <constraint firstItem="kU5-Ph-oBh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="156" id="JpK-ZY-LTC"/>
+                            <constraint firstItem="V8Q-Yr-v4q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="118" id="Q7A-ot-eC9"/>
+                            <constraint firstItem="QhF-OB-kjZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="odf-Px-ssD"/>
+                            <constraint firstItem="V8Q-Yr-v4q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="olh-e2-dlG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AppHome" id="Fw8-Ph-DO1"/>
@@ -280,6 +307,135 @@
             </objects>
             <point key="canvasLocation" x="2648" y="88"/>
         </scene>
+        <!--Add Event Screen-->
+        <scene sceneID="2nP-dC-NqR">
+            <objects>
+                <viewController storyboardIdentifier="AddEventScreen" id="NwV-T4-eoj" customClass="AddEventScreen" customModule="a61" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oSa-V5-5oV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="B1D-ch-lTf">
+                                <rect key="frame" x="169" y="204" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9BE-nS-LEj"/>
+                                    <constraint firstAttribute="height" constant="30" id="dwJ-nI-jqy"/>
+                                </constraints>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8A-qK-EgR">
+                                <rect key="frame" x="44.5" y="209" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWY-l1-IV4">
+                                <rect key="frame" x="107" y="383" width="200" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="yLZ-DB-Qat"/>
+                                </constraints>
+                                <state key="normal" title="Add Event">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonHit:" destination="NwV-T4-eoj" eventType="touchUpInside" id="U8W-iB-9j3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fwi-03-eQ8"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="B1D-ch-lTf" firstAttribute="centerY" secondItem="oSa-V5-5oV" secondAttribute="centerY" constant="-229" id="9kt-Ti-rg7"/>
+                            <constraint firstItem="u8A-qK-EgR" firstAttribute="centerY" secondItem="oSa-V5-5oV" secondAttribute="centerY" constant="-228.5" id="CbQ-h0-PiK"/>
+                            <constraint firstItem="gWY-l1-IV4" firstAttribute="centerX" secondItem="oSa-V5-5oV" secondAttribute="centerX" id="M9m-bu-b7Q"/>
+                            <constraint firstItem="gWY-l1-IV4" firstAttribute="centerY" secondItem="oSa-V5-5oV" secondAttribute="centerY" constant="-50" id="YYQ-o4-UcQ"/>
+                            <constraint firstItem="u8A-qK-EgR" firstAttribute="centerX" secondItem="oSa-V5-5oV" secondAttribute="centerX" constant="-142" id="du4-kw-S71"/>
+                            <constraint firstItem="B1D-ch-lTf" firstAttribute="centerX" secondItem="oSa-V5-5oV" secondAttribute="centerX" constant="62" id="kLQ-w0-7Lk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="gWY-l1-IV4" id="f3A-Lq-YNc"/>
+                        <outlet property="dateField" destination="B1D-ch-lTf" id="HSB-Nx-bvE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ved-MH-2cU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3582.608695652174" y="83.705357142857139"/>
+        </scene>
+        <!--Event List View-->
+        <scene sceneID="RBj-nl-vSa">
+            <objects>
+                <viewController storyboardIdentifier="EventListView" id="ziL-QU-0HO" customClass="EventListView" customModule="a61" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P81-rC-CeU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pa4-op-gJV">
+                                <rect key="frame" x="50" y="94" width="314" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" calendarEvent="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F1d-B6-C4Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="F1d-B6-C4Z" firstAttribute="trailing" secondItem="pa4-op-gJV" secondAttribute="trailing" constant="50" id="MVg-8e-Zwb"/>
+                            <constraint firstItem="pa4-op-gJV" firstAttribute="centerX" secondItem="P81-rC-CeU" secondAttribute="centerX" id="Q6g-Gf-ZYL"/>
+                            <constraint firstItem="pa4-op-gJV" firstAttribute="centerY" secondItem="P81-rC-CeU" secondAttribute="centerY" id="Ug4-Y9-F1r"/>
+                            <constraint firstItem="pa4-op-gJV" firstAttribute="top" secondItem="F1d-B6-C4Z" secondAttribute="top" constant="50" id="Z5V-s9-0j1"/>
+                            <constraint firstItem="F1d-B6-C4Z" firstAttribute="bottom" secondItem="pa4-op-gJV" secondAttribute="bottom" constant="50" id="edu-sn-Qyx"/>
+                            <constraint firstItem="pa4-op-gJV" firstAttribute="leading" secondItem="F1d-B6-C4Z" secondAttribute="leading" constant="50" id="zvH-cZ-ziD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="pa4-op-gJV" id="cSQ-3l-J6C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQb-ts-amG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3583" y="796"/>
+        </scene>
+        <!--Supplier List View-->
+        <scene sceneID="4kV-Ic-cjC">
+            <objects>
+                <viewController storyboardIdentifier="SupplierListView" id="YDd-cz-Psm" customClass="SupplierListView" customModule="a61" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UaZ-Ix-9BK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="yvP-yU-Qz3">
+                                <rect key="frame" x="50" y="94" width="314" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" calendarEvent="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tUu-yC-fxt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="yvP-yU-Qz3" firstAttribute="leading" secondItem="tUu-yC-fxt" secondAttribute="leading" constant="50" id="1iK-4W-cw1"/>
+                            <constraint firstItem="yvP-yU-Qz3" firstAttribute="top" secondItem="tUu-yC-fxt" secondAttribute="top" constant="50" id="6mq-ek-Pde"/>
+                            <constraint firstItem="tUu-yC-fxt" firstAttribute="trailing" secondItem="yvP-yU-Qz3" secondAttribute="trailing" constant="50" id="SsU-fE-U8i"/>
+                            <constraint firstItem="yvP-yU-Qz3" firstAttribute="centerY" secondItem="UaZ-Ix-9BK" secondAttribute="centerY" id="d6T-hi-1CH"/>
+                            <constraint firstItem="yvP-yU-Qz3" firstAttribute="centerX" secondItem="UaZ-Ix-9BK" secondAttribute="centerX" id="fEs-0h-BAK"/>
+                            <constraint firstItem="tUu-yC-fxt" firstAttribute="bottom" secondItem="yvP-yU-Qz3" secondAttribute="bottom" constant="50" id="uAa-jz-kQQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="yvP-yU-Qz3" id="MbV-wD-TkD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cxn-Fg-BMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2648" y="796"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
@@ -287,6 +443,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -296,6 +455,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

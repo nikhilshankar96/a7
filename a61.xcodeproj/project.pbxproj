@@ -22,6 +22,9 @@
 		15747FC0260BB08D00888F96 /* a5-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15747FBF260BB08D00888F96 /* a5-main.swift */; };
 		15747FC3260BB3EE00888F96 /* req.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15747FC2260BB3EE00888F96 /* req.swift */; };
 		15747FCA260BCC8A00888F96 /* AddSupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15747FC9260BCC8A00888F96 /* AddSupScreen.swift */; };
+		15DA782A260C26AB00814DD4 /* AddEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA7829260C26AB00814DD4 /* AddEventScreen.swift */; };
+		15DA782D260C30E700814DD4 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA782C260C30E700814DD4 /* EventListView.swift */; };
+		15DA7830260C36F000814DD4 /* SupplierListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA782F260C36F000814DD4 /* SupplierListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		15747FBF260BB08D00888F96 /* a5-main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "a5-main.swift"; sourceTree = "<group>"; };
 		15747FC2260BB3EE00888F96 /* req.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = req.swift; sourceTree = "<group>"; };
 		15747FC9260BCC8A00888F96 /* AddSupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSupScreen.swift; sourceTree = "<group>"; };
+		15DA7829260C26AB00814DD4 /* AddEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventScreen.swift; sourceTree = "<group>"; };
+		15DA782C260C30E700814DD4 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		15DA782F260C36F000814DD4 /* SupplierListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 				156840CB26082D4200C62BB3 /* Info.plist */,
 				156840D2260837E400C62BB3 /* Screen2ViewController.swift */,
 				15747FC9260BCC8A00888F96 /* AddSupScreen.swift */,
+				15DA7829260C26AB00814DD4 /* AddEventScreen.swift */,
+				15DA782C260C30E700814DD4 /* EventListView.swift */,
+				15DA782F260C36F000814DD4 /* SupplierListView.swift */,
 			);
 			path = a61;
 			sourceTree = "<group>";
@@ -167,12 +176,15 @@
 				156840EA2609842E00C62BB3 /* Person.swift in Sources */,
 				15747FBD260BB05500888F96 /* Event.swift in Sources */,
 				15747FC3260BB3EE00888F96 /* req.swift in Sources */,
+				15DA782D260C30E700814DD4 /* EventListView.swift in Sources */,
 				156840C226082D4100C62BB3 /* ViewController.swift in Sources */,
+				15DA782A260C26AB00814DD4 /* AddEventScreen.swift in Sources */,
 				156840F02609849D00C62BB3 /* Doctor.swift in Sources */,
 				15747FC0260BB08D00888F96 /* a5-main.swift in Sources */,
 				15747FCA260BCC8A00888F96 /* AddSupScreen.swift in Sources */,
 				156840BE26082D4100C62BB3 /* AppDelegate.swift in Sources */,
 				156840C026082D4100C62BB3 /* SceneDelegate.swift in Sources */,
+				15DA7830260C36F000814DD4 /* SupplierListView.swift in Sources */,
 				156840F42609853200C62BB3 /* Supplier.swift in Sources */,
 				156840D3260837E400C62BB3 /* Screen2ViewController.swift in Sources */,
 				156840ED2609847C00C62BB3 /* User.swift in Sources */,

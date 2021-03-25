@@ -13,6 +13,9 @@ class Supplier : Person {
         print("\r\nUUID: \(self.uuid) \r\nName: \(self.name) \r\nEmail: \(self.email) \r\nQuantity: \(self.quantity)\r\n")
     }
     
+    func getSupplierString()-> String{
+        return ("\r\nUUID: \(self.uuid) \r\nName: \(self.name) \r\nEmail: \(self.email) \r\nQuantity: \(self.quantity)\r\n")
+    }
     
     static func getAllQuantity() -> [Int]{
         var quantArray = [Int]();

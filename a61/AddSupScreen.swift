@@ -27,6 +27,7 @@ class AddSupScreen: UIViewController {
             
             let s = Supplier(name: nameField.text!, email: emailField.text!, password: passwordField.text!, quantity: Int(quantityField.text!)!)
             s.showDetails();
+            self.navigationController?.popViewController(animated: true)
         }
         else{
             print("error");

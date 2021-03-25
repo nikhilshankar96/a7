@@ -21,6 +21,9 @@ class Event{
     func showEvent() {
         print("\r\nID: \(self.uuid) \r\nDate: \(self.date)  \r\nPerson:  \(self.person) \r\nCompleted: \(self.completed)")
     }
+    func getEventString() -> String{
+        return("\r\nID: \(self.uuid) \r\nDate: \(self.date)  \r\nPerson:  \(self.person) \r\nCompleted: \(self.completed)")
+    }
     
     static func showAvailableSlots(){
         for booking in Event.EventList.values{

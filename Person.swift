@@ -20,8 +20,8 @@ class Person {
         print("\r\nUUID: \(self.uuid) \r\nName: \(self.name) \r\nEmail: \(self.email) \r\nPassword: *******************\r\n")
     }
     
-    func getDetailsString() -> String {
-        return "\r\nUUID: \(self.uuid) \r\nName: \(self.name) \r\nEmail: \(self.email) \r\nPassword: *******************\r\n"
+    func getPersonString() -> String {
+        return "\r\nUUID: \(self.uuid) \r\nName: \(self.name) \r\nEmail: \(self.email)\r\n"
     }
     
     func updateUser(name: String, email: String){
