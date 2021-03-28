@@ -44,6 +44,18 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(s12, animated: true)
     }
     
+    @IBAction func updateAccountButton(_ sender: Any) {
+        if( Supplier.SupplierList[Person.currentPerson.uuid]   != nil){
+            print("Supplier")
+            let s = storyboard?.instantiateViewController(identifier: "UpdateSupplierScreen") as! UpdateSupplierScreen;
+            self.navigationController?.pushViewController(s, animated: true)
+        } else {
+            print("Person")
+            let p = storyboard?.instantiateViewController(identifier: "PersonUpdateScreen") as! PersonUpdateScreen;
+            self.navigationController?.pushViewController(p, animated: true)
+        }
+    }
+    
     @IBAction func statusButton(_ sender: Any) {
         //alert
         let a9 = UIAlertController(title: "Compliance Status", message: Person.currentPerson.isCompliant() ? "Yes" : "No" , preferredStyle: .alert)
