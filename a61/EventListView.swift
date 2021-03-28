@@ -13,6 +13,7 @@ class EventListView: UIViewController {
         let str: [String] = Event.EventList.values.map{
             $0.getEventString();
         }
+        textView.insertText("")
         textView.insertText(str.joined(separator: "\n") )
     }
     

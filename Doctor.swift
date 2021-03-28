@@ -3,9 +3,9 @@ import Foundation
 class Doctor : Person {
     static var DoctorList = [String :Doctor]();
     var availableSlots: [String: String];
-    init(name: String, email: String, password: String, availableSlots: [String: String]) {
+    init(name: String, email: String, password: String, phone: String, address: String, availableSlots: [String: String]) {
         self.availableSlots = availableSlots;
-        super.init(name: name, email: email, password: password);
+        super.init(name: name, email: email, password: password, phone: phone, address: address);
         Doctor.DoctorList.updateValue(self, forKey: self.uuid)
     }
     

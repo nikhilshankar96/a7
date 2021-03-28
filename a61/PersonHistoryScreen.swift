@@ -1,6 +1,6 @@
 import UIKit
 
-class SupplierListView: UIViewController {
+class PersonHistoryScreen: UIViewController {
     
     @IBOutlet var textView : UITextView!
 
@@ -8,12 +8,18 @@ class SupplierListView: UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBar.barTintColor = UIColor.orange
-
-        // Do any additional setup after loading the view.
-        let str: [String] = Supplier.SupplierList.values.map{
-            $0.getSupplierString();
-        }
+        
         textView.insertText("")
+        textView.insertText(Person.currentPerson.getPersonString())
+        textView.insertText("")
+        textView.insertText("")
+        textView.insertText("Prev Bookings:")
+        textView.insertText("")
+        textView.insertText("")
+        // Do any additional setup after loading the view.
+        let str: [String] = Person.currentPerson.bookingHistory.map{
+            Event.EventList[($0)]?.getEventString() as! String;
+        }
         textView.insertText(str.joined(separator: "\n") )
     }
     

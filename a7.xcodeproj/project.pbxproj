@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		156840BE26082D4100C62BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156840BD26082D4100C62BB3 /* AppDelegate.swift */; };
-		156840C026082D4100C62BB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156840BF26082D4100C62BB3 /* SceneDelegate.swift */; };
 		156840C226082D4100C62BB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156840C126082D4100C62BB3 /* ViewController.swift */; };
 		156840C526082D4100C62BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156840C326082D4100C62BB3 /* Main.storyboard */; };
 		156840C726082D4200C62BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156840C626082D4200C62BB3 /* Assets.xcassets */; };
@@ -22,15 +21,17 @@
 		15747FC0260BB08D00888F96 /* a5-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15747FBF260BB08D00888F96 /* a5-main.swift */; };
 		15747FC3260BB3EE00888F96 /* req.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15747FC2260BB3EE00888F96 /* req.swift */; };
 		15747FCA260BCC8A00888F96 /* AddSupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15747FC9260BCC8A00888F96 /* AddSupScreen.swift */; };
+		157D465D260FBB4000095327 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D465C260FBB4000095327 /* LoginScreen.swift */; };
+		157D4660260FE1AC00095327 /* EventBookingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D465F260FE1AC00095327 /* EventBookingScreen.swift */; };
+		157D4663260FF5D800095327 /* PersonHistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D4662260FF5D800095327 /* PersonHistoryScreen.swift */; };
 		15DA782A260C26AB00814DD4 /* AddEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA7829260C26AB00814DD4 /* AddEventScreen.swift */; };
 		15DA782D260C30E700814DD4 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA782C260C30E700814DD4 /* EventListView.swift */; };
 		15DA7830260C36F000814DD4 /* SupplierListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA782F260C36F000814DD4 /* SupplierListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		156840BA26082D4100C62BB3 /* a61.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a61.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		156840BA26082D4100C62BB3 /* a7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156840BD26082D4100C62BB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		156840BF26082D4100C62BB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		156840C126082D4100C62BB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		156840C426082D4100C62BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		156840C626082D4200C62BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +46,9 @@
 		15747FBF260BB08D00888F96 /* a5-main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "a5-main.swift"; sourceTree = "<group>"; };
 		15747FC2260BB3EE00888F96 /* req.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = req.swift; sourceTree = "<group>"; };
 		15747FC9260BCC8A00888F96 /* AddSupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSupScreen.swift; sourceTree = "<group>"; };
+		157D465C260FBB4000095327 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		157D465F260FE1AC00095327 /* EventBookingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBookingScreen.swift; sourceTree = "<group>"; };
+		157D4662260FF5D800095327 /* PersonHistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHistoryScreen.swift; sourceTree = "<group>"; };
 		15DA7829260C26AB00814DD4 /* AddEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventScreen.swift; sourceTree = "<group>"; };
 		15DA782C260C30E700814DD4 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		15DA782F260C36F000814DD4 /* SupplierListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierListView.swift; sourceTree = "<group>"; };
@@ -79,7 +83,7 @@
 		156840BB26082D4100C62BB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				156840BA26082D4100C62BB3 /* a61.app */,
+				156840BA26082D4100C62BB3 /* a7.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				156840BD26082D4100C62BB3 /* AppDelegate.swift */,
-				156840BF26082D4100C62BB3 /* SceneDelegate.swift */,
 				156840C126082D4100C62BB3 /* ViewController.swift */,
 				156840C326082D4100C62BB3 /* Main.storyboard */,
 				156840C626082D4200C62BB3 /* Assets.xcassets */,
@@ -99,6 +102,9 @@
 				15DA7829260C26AB00814DD4 /* AddEventScreen.swift */,
 				15DA782C260C30E700814DD4 /* EventListView.swift */,
 				15DA782F260C36F000814DD4 /* SupplierListView.swift */,
+				157D465C260FBB4000095327 /* LoginScreen.swift */,
+				157D465F260FE1AC00095327 /* EventBookingScreen.swift */,
+				157D4662260FF5D800095327 /* PersonHistoryScreen.swift */,
 			);
 			path = a61;
 			sourceTree = "<group>";
@@ -106,9 +112,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		156840B926082D4100C62BB3 /* a61 */ = {
+		156840B926082D4100C62BB3 /* a7 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 156840CE26082D4200C62BB3 /* Build configuration list for PBXNativeTarget "a61" */;
+			buildConfigurationList = 156840CE26082D4200C62BB3 /* Build configuration list for PBXNativeTarget "a7" */;
 			buildPhases = (
 				156840B626082D4100C62BB3 /* Sources */,
 				156840B726082D4100C62BB3 /* Frameworks */,
@@ -118,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = a61;
+			name = a7;
 			productName = a61;
-			productReference = 156840BA26082D4100C62BB3 /* a61.app */;
+			productReference = 156840BA26082D4100C62BB3 /* a7.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 156840B526082D4100C62BB3 /* Build configuration list for PBXProject "a61" */;
+			buildConfigurationList = 156840B526082D4100C62BB3 /* Build configuration list for PBXProject "a7" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				156840B926082D4100C62BB3 /* a61 */,
+				156840B926082D4100C62BB3 /* a7 */,
 			);
 		};
 /* End PBXProject section */
@@ -178,12 +184,14 @@
 				15747FC3260BB3EE00888F96 /* req.swift in Sources */,
 				15DA782D260C30E700814DD4 /* EventListView.swift in Sources */,
 				156840C226082D4100C62BB3 /* ViewController.swift in Sources */,
+				157D465D260FBB4000095327 /* LoginScreen.swift in Sources */,
 				15DA782A260C26AB00814DD4 /* AddEventScreen.swift in Sources */,
 				156840F02609849D00C62BB3 /* Doctor.swift in Sources */,
 				15747FC0260BB08D00888F96 /* a5-main.swift in Sources */,
+				157D4663260FF5D800095327 /* PersonHistoryScreen.swift in Sources */,
 				15747FCA260BCC8A00888F96 /* AddSupScreen.swift in Sources */,
+				157D4660260FE1AC00095327 /* EventBookingScreen.swift in Sources */,
 				156840BE26082D4100C62BB3 /* AppDelegate.swift in Sources */,
-				156840C026082D4100C62BB3 /* SceneDelegate.swift in Sources */,
 				15DA7830260C36F000814DD4 /* SupplierListView.swift in Sources */,
 				156840F42609853200C62BB3 /* Supplier.swift in Sources */,
 				156840D3260837E400C62BB3 /* Screen2ViewController.swift in Sources */,
@@ -335,12 +343,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLU393425G;
 				INFOPLIST_FILE = a61/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nps.a61;
+				PRODUCT_BUNDLE_IDENTIFIER = nps.a7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,12 +362,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLU393425G;
 				INFOPLIST_FILE = a61/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nps.a61;
+				PRODUCT_BUNDLE_IDENTIFIER = nps.a7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		156840B526082D4100C62BB3 /* Build configuration list for PBXProject "a61" */ = {
+		156840B526082D4100C62BB3 /* Build configuration list for PBXProject "a7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				156840CC26082D4200C62BB3 /* Debug */,
@@ -377,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		156840CE26082D4200C62BB3 /* Build configuration list for PBXNativeTarget "a61" */ = {
+		156840CE26082D4200C62BB3 /* Build configuration list for PBXNativeTarget "a7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				156840CF26082D4200C62BB3 /* Debug */,

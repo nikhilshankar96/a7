@@ -7,12 +7,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        initAppFunc();
     }
 
     @IBAction func addPersonButton(_ sender: Any) {
-        let s2 = storyboard?.instantiateViewController(identifier: "screen2vc") as! Screen2ViewController;
+        let s2 = storyboard?.instantiateViewController(identifier: "AddPersonScreen") as! Screen2ViewController;
         self.navigationController?.pushViewController(s2, animated: true)
     }
     
@@ -35,20 +33,27 @@ class ViewController: UIViewController {
         let s = storyboard?.instantiateViewController(identifier: "SupplierListView") as! SupplierListView;
         self.navigationController?.pushViewController(s, animated: true)
     }
+    
+    @IBAction func bookEventButton(_ sender: Any) {
+        let s7 = storyboard?.instantiateViewController(identifier: "EventBookingScreen") as! EventBookingScreen;
+        self.navigationController?.pushViewController(s7, animated: true)
+    }
+    
+    @IBAction func accountButton(_ sender: Any) {
+        let s12 = storyboard?.instantiateViewController(identifier: "PersonHistoryScreen") as! PersonHistoryScreen;
+        self.navigationController?.pushViewController(s12, animated: true)
+    }
+    
+    @IBAction func statusButton(_ sender: Any) {
+        //alert
+        let a9 = UIAlertController(title: "Compliance Status", message: Person.currentPerson.isCompliant() ? "Yes" : "No" , preferredStyle: .alert)
+
+        // add an action (button)
+        a9.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(a9, animated: true, completion: nil)
+    }
 }
 
-func initAppFunc() {
-    let admin = Person(name: "Admin", email: "admin", password: "admin");
-    let Person1 = Person(name: "N", email: "nnn", password: "admin");
-    let doc1 = Supplier(name: "Ray", email: "ray", password: "admin", quantity: 6)
-    let doc2 = Supplier(name: "Norman", email: "norman", password: "admin", quantity: 5)
-    Person.currentPerson = admin;
-    
-    let e1 = Event(date: "2/22/2020", completed: false);
-    let e2 = Event(date: "2/23/2020", completed: false);
-    let e3 = Event(date: "2/24/2020", completed: false);
-    let e4 = Event(date: "2/25/2020", completed: false);
-    let e5 = Event(date: "2/26/2020", completed: false);
-    let e6 = Event(date: "2/27/2020", completed: false);
-    let e7 = Event(date: "3/1/2020", completed: false);
-}
+

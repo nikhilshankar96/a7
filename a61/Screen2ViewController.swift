@@ -5,6 +5,9 @@ class Screen2ViewController: UIViewController {
     @IBOutlet var nameField: UITextField!
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
+    @IBOutlet var addressField: UITextField!
+    @IBOutlet var phoneField: UITextField!
+
     
     @IBOutlet var addButton: UIButton!
     
@@ -16,31 +19,27 @@ class Screen2ViewController: UIViewController {
         
         nameField.autocapitalizationType = .words;
         nameField.autocorrectionType = .no;
-        passwordField.autocorrectionType = .no;
         emailField.autocorrectionType = .no;
         
     }
     
     @IBAction func addButtonHit(_ sender: Any){
-        if(nameField.text != "" && passwordField.text != "" && emailField.text != ""){
-            let p = Person(name: nameField.text!, email: emailField.text!, password: passwordField.text!);
-            for pe in Person.PersonList.values{
-                pe.showDetails();
-            }
-            nameField.text = "";
-            passwordField.text = "";
-            emailField.text = "";
+        if(nameField.text != "" &&
+            passwordField.text != "" &&
+            Person.isValidEmail(emailField.text!) &&
+            Person.isValidPhone(phoneField.text!) && addressField.text != ""){
+            let p = Person(name: nameField.text!, email: emailField.text!, password: passwordField.text!, phone: phoneField.text!, address: addressField.text!);
             self.navigationController?.popViewController(animated: true)
         }
         else{
             print("error");
-            let alert = UIAlertController(title: "Error", message: "Fields cant be empty", preferredStyle: .alert)
+            let a5 = UIAlertController(title: "Error", message: "Fields cant be empty", preferredStyle: .alert)
 
                    // add an action (button)
-                   alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                   a5.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 
                    // show the alert
-                   self.present(alert, animated: true, completion: nil)
+                   self.present(a5, animated: true, completion: nil)
         }
     }
 }

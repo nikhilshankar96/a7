@@ -14,9 +14,9 @@ class AddEventScreen: UIViewController {
     
     @IBAction func addButtonHit(_ sender: Any){
     
-        let components = dateField.calendar.dateComponents([.day, .year, .month], from: dateField.date)
-            let s = Event(date: "\(components.month!)/\(components.day!)/\(components.year!)", completed: false )
+        let ts = dateField.date.timeIntervalSince1970
+        let s = Event(date: ts, completed: false)
             s.showEvent();
-//        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 }

@@ -3,9 +3,9 @@ import Foundation
 class Supplier : Person {
     static var SupplierList = [String :Supplier]();
     var quantity: Int;
-    init(name: String, email: String, password: String, quantity: Int) {
+    init(name: String, email: String, password: String, quantity: Int,phone: String, address: String) {
         self.quantity = quantity;
-        super.init(name: name, email: email, password: password);
+        super.init(name: name, email: email, password: password, phone: phone, address: address);
         Supplier.SupplierList.updateValue(self, forKey: self.uuid)
     }
     
